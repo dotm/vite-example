@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App text-center">
       <h1>Welcome to React Router!</h1>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,7 +21,7 @@ function Home() {
         <p>You can do this, I believe in you.</p>
       </main>
       <nav>
-        <Link to="/about">About</Link>
+        <Link to="/about" className="link">About</Link>
       </nav>
     </>
   );
@@ -39,7 +38,7 @@ function About() {
         </p>
       </main>
       <nav>
-        <Link to="/">Home</Link>
+        <Link to="/" className="link">Home</Link>
       </nav>
     </>
   );
